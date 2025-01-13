@@ -23,6 +23,11 @@ class Contact{
 		std::string phone_number;
 		std::string darkest_secret;
 	public:
+		void	set_first_name(std::string name);
+		void	set_last_name(std::string name);
+		void	set_nickname(std::string nick);
+		void	set_phone_number(std::string number);
+		void	set_darkest_secrect(std::string secret);
 };
 
 

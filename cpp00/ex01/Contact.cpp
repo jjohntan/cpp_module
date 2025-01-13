@@ -11,3 +11,7 @@
 /* ************************************************************************** */
 
 #include "Contact.hpp"
+
+void	set_first_name(std::string name){
+	first_name = name;
+}

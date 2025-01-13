@@ -19,8 +19,8 @@ void	Phonebook::add(void)
 	
 	if (this->index > 7)
 		index = 0;
-	//function to add contact
-	//handle more than 8
-	//store into contact
-	std::cout << "Contact saved";
+	/*std::cout << "Enter first name";*/
+	contact[this->index]= tmp_contact;//store into contact
+	this ->index++;
+	std::cout << "Contact saved successfully";
 }
