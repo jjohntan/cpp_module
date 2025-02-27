@@ -5,22 +5,46 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/04 22:18:58 by jetan             #+#    #+#             */
-/*   Updated: 2025/01/10 20:35:10 by jetan            ###   ########.fr       */
+/*   Created: 2025/02/27 08:07:49 by jetan             #+#    #+#             */
+/*   Updated: 2025/02/27 23:11:59 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "PhoneBook.hpp"
 #include <iostream>
+#include <iomanip>
+#include "PhoneBook.hpp"
 
-void	Phonebook::add(void)
+//default constructor
+Phonebook::Phonebook(): index(0)
 {
-	Contact tmp_contact;
-	
+}
+
+//default destructor
+Phonebook::~Phonebook()
+{
+}
+
+void	Phonebook::ft_add(Contact contact)
+{
+	std::cout << "hello";
 	if (this->index > 7)
-		index = 0;
-	/*std::cout << "Enter first name";*/
-	contact[this->index]= tmp_contact;//store into contact
-	this ->index++;
-	std::cout << "Contact saved successfully";
+		this->index = 0;
+	contacts[this->index] = contact;
+	this->index++;
+}
+
+void	Phonebook::ft_search()
+{
+	std::cout << std::setw(10) << "index" << "|";
+	std::cout << std::setw(10) << "first name" << "|";
+	std::cout << std::setw(10) << "last name" << "|";
+	std::cout << std::setw(10) << "nickname" << "|" << std::endl;
+	
+	for (int i = 0; i < index; i++)
+	{
+		
+		// std::cout << std::setw(10) << first_name << "|";
+		// std::cout << std::setw(10) << last_name << "|";
+		// std::cout << std::setw(10) << nickname << "|" << std::endl;
+	}
 }

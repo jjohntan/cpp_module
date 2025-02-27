@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/06 15:20:39 by jetan             #+#    #+#             */
-/*   Updated: 2025/01/10 19:13:05 by jetan            ###   ########.fr       */
+/*   Created: 2025/02/27 08:04:45 by jetan             #+#    #+#             */
+/*   Updated: 2025/02/27 19:08:29 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,18 @@
 
 #include "Contact.hpp"
 
-class Phonebook{
+class Phonebook
+{
 	private:
-		Contact contact[8];
-
-	public:
+		Contact	contacts[8];
 		int		index;
-		void	add(void);
-		void	search(void);
+	
+	public:
+		Phonebook();//default constructor
+		~Phonebook();//default destructor
+	
+	void	ft_add(Contact contact);
+	void	ft_search();
 };
 
-#endif
+# endif
