@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 08:07:49 by jetan             #+#    #+#             */
-/*   Updated: 2025/02/28 22:36:37 by jetan            ###   ########.fr       */
+/*   Updated: 2025/02/28 23:08:24 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,12 +44,12 @@ void	Phonebook::ft_search()
 	std::cout << std::setw(10) << "last name" << "|";
 	std::cout << std::setw(10) << "nickname" << "|" << std::endl;
 	
-	for (int i = 0; i < index; i++)
+	for (int i = 0; i < 8; i++)
 	{
 		std::cout << std::setw(10) << i + 1 << "|";
-		std::cout << std::setw(10) << contacts[i].get_first_name() << "|";
-		std::cout << std::setw(10) << contacts[i].get_last_name() << "|";
-		std::cout << std::setw(10) << contacts[i].get_nickname() << "|" << std::endl;
+		std::cout << std::setw(10) << truncated(contacts[i].get_first_name()) << "|";
+		std::cout << std::setw(10) << truncated(contacts[i].get_last_name()) << "|";
+		std::cout << std::setw(10) << truncated(contacts[i].get_nickname()) << "|" << std::endl;
 	}
 	// read index
 	std::string input;
@@ -60,11 +60,11 @@ void	Phonebook::ft_search()
 	nb = atoi(input.c_str());
 	if (nb == index)
 	{	// compare index
-		std::cout << "first name: " << truncated(contacts[nb - 1].get_first_name()) << std::endl;
-		std::cout << "last name: " << truncated(contacts[nb - 1].get_last_name()) << std::endl;
-		std::cout << "nickname: " << truncated(contacts[nb - 1].get_nickname()) << std::endl;
-		std::cout << "phone number: " << truncated(contacts[nb - 1].get_phone_number()) << std::endl;
-		std::cout << "darkest secret: " << truncated(contacts[nb - 1].get_darkest_secret()) << std::endl;
+		std::cout << "first name: " << contacts[nb - 1].get_first_name() << std::endl;
+		std::cout << "last name: " << contacts[nb - 1].get_last_name() << std::endl;
+		std::cout << "nickname: " << contacts[nb - 1].get_nickname() << std::endl;
+		std::cout << "phone number: " << contacts[nb - 1].get_phone_number() << std::endl;
+		std::cout << "darkest secret: " << contacts[nb - 1].get_darkest_secret() << std::endl;
 	}
 	else
 		std::cout << "Invalid index" << std::endl;
@@ -72,5 +72,10 @@ void	Phonebook::ft_search()
 
 std::string	truncated(std::string str)
 {
+	if (str.length() > 10)
+	{
+		str.resize(9);
+		str.append(".");
+	}
 	return (str);
 }

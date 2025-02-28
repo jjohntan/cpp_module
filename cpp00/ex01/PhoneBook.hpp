@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 08:04:45 by jetan             #+#    #+#             */
-/*   Updated: 2025/02/28 20:42:22 by jetan            ###   ########.fr       */
+/*   Updated: 2025/02/28 22:39:05 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,7 @@ class Phonebook
 	void	ft_display_contact();
 	void	ft_display_info();
 };
+
+std::string	truncated(std::string str);
 
 # endif
