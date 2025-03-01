@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 08:03:30 by jetan             #+#    #+#             */
-/*   Updated: 2025/02/28 21:58:58 by jetan            ###   ########.fr       */
+/*   Updated: 2025/03/01 18:30:31 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,21 +19,6 @@ void	ft_info(Contact &contact)
 {
 	std::string input;
 	
-	// std::cout << "First name: ";
-	// std::getline(std::cin, input);
-	// contact.set_first_name(input);
-	// std::cout << "Last name: ";
-	// std::getline(std::cin, input);
-	// contact.set_last_name(input);
-	// std::cout << "Nickname: ";
-	// std::getline(std::cin, input);
-	// contact.set_nickname(input);
-	// std::cout << "Phone number: ";
-	// std::getline(std::cin, input);
-	// contact.set_phone_number(input);
-	// std::cout << "Darkest secrect: ";
-	// std::getline(std::cin, input);
-	// contact.set_darkest_secret(input);
 	while (1)
 	{
 		std::cout << "First name: ";
@@ -139,7 +124,7 @@ int main()
 {
 	Phonebook phonebook;//object
 	Contact	new_contact;//object
-	std::string command;
+	std::string command;//string
 	
 	while (true)
 	{

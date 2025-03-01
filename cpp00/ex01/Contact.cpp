@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 08:11:01 by jetan             #+#    #+#             */
-/*   Updated: 2025/02/27 10:56:25 by jetan            ###   ########.fr       */
+/*   Updated: 2025/03/01 18:24:59 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ Contact::~Contact()
 {
 }
 
+//setter function
 void	Contact::set_first_name(std::string str)
 {
 	this->first_name = str;
@@ -47,6 +48,7 @@ void	Contact::set_darkest_secret(std::string str)
 	this->darkest_secret = str;
 }
 
+//getter function
 std::string Contact::get_first_name(){ return first_name; }
 std::string Contact::get_last_name(){ return last_name; }
 std::string Contact::get_nickname(){ return nickname; }
