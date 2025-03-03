@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 08:03:30 by jetan             #+#    #+#             */
-/*   Updated: 2025/03/03 17:13:21 by jetan            ###   ########.fr       */
+/*   Updated: 2025/03/03 18:00:44 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_info(Contact &contact)
 		std::getline(std::cin, input);
 		if (std::cin.eof())
 		{
-			exit(0);
+			std::exit(0);
 		}
 		else
 		{
@@ -45,7 +45,7 @@ void	ft_info(Contact &contact)
 		std::getline(std::cin, input);
 		if (std::cin.eof())
 		{
-			exit(0);
+			std::exit(0);
 		}
 		else
 		{
@@ -64,7 +64,7 @@ void	ft_info(Contact &contact)
 		std::getline(std::cin, input);
 		if (std::cin.eof())
 		{
-			exit(0);
+			std::exit(0);
 		}
 		else
 		{
@@ -83,7 +83,7 @@ void	ft_info(Contact &contact)
 		std::getline(std::cin, input);
 		if (std::cin.eof())
 		{
-			exit(0);
+			std::exit(0);
 		}
 		else
 		{
@@ -102,7 +102,7 @@ void	ft_info(Contact &contact)
 		std::getline(std::cin, input);
 		if (std::cin.eof())
 		{
-			exit(0);
+			std::exit(0);
 		}
 		else
 		{
