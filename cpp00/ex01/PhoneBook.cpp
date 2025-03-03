@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 08:07:49 by jetan             #+#    #+#             */
-/*   Updated: 2025/03/01 23:20:29 by jetan            ###   ########.fr       */
+/*   Updated: 2025/03/03 17:23:07 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ void	Phonebook::ft_search()
 	{	// compare index
 		if (contacts[nb - 1].get_first_name().empty())
 		{
-			std::cout << "HEllo" << std::endl;
+			std::cout << "Index does not exist" << std::endl;
 			return ;
 		}
 		std::cout << "first name: " << contacts[nb - 1].get_first_name() << std::endl;

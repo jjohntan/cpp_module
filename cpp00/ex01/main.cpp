@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 08:03:30 by jetan             #+#    #+#             */
-/*   Updated: 2025/03/01 18:30:31 by jetan            ###   ########.fr       */
+/*   Updated: 2025/03/03 17:13:21 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <string>
 #include "PhoneBook.hpp"
 #include "Contact.hpp"
+#include <cstdlib>
 
 void	ft_info(Contact &contact)
 {
@@ -30,10 +31,7 @@ void	ft_info(Contact &contact)
 		else
 		{
 			if (input.empty())
-			{
-				std::cout << "wrong" << std::endl; //custom your self
 				continue;
-			}
 			else
 			{
 				contact.set_first_name(input);
