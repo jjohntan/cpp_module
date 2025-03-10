@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/07 21:45:07 by jetan             #+#    #+#             */
-/*   Updated: 2025/03/08 21:19:36 by jetan            ###   ########.fr       */
+/*   Updated: 2025/03/10 10:27:17 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int main()
 {
 	Zombie *zombie = newZombie("Foo");
-	(void) zombie;
+	zombie->announce();
 	delete (zombie);
 }
