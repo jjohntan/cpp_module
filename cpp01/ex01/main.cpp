@@ -14,5 +14,6 @@
 
 int main()
 {
-	
+	Zombie *zombie = zombieHorde(4, "Foo");
+	zombie->announce();
 }

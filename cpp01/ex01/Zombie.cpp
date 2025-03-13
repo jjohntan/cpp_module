@@ -11,6 +11,11 @@
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
+#include <iostream>
+
+Zombie::Zombie(): name("")
+{
+}
 
 Zombie::Zombie(std::string name): name(name)
 {
@@ -22,7 +27,7 @@ Zombie::~Zombie()
 
 void Zombie::announce( void )
 {
-	std::cout << this->name << "BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << this->name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
 void Zombie::setname( std::string name)
