@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 15:07:40 by jetan             #+#    #+#             */
-/*   Updated: 2025/03/12 15:42:57 by jetan            ###   ########.fr       */
+/*   Updated: 2025/03/14 13:41:22 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ Zombie* zombieHorde( int N, std::string name )
 	for (int i = 0; i < N; i++)
 	{
 		horde[i].setname(name);
+		horde[i].announce();
 	}
 	return horde;
 }
