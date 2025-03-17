@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/14 15:33:50 by jetan             #+#    #+#             */
-/*   Updated: 2025/03/14 16:55:35 by jetan            ###   ########.fr       */
+/*   Updated: 2025/03/17 14:24:37 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "Weapon.hpp"
 #include <iostream>
 
-HumanA::HumanA(std::string name, Weapon& weapon): name(name), _Weapon(weapon)
+HumanA::HumanA(std::string name, Weapon& weapon): _Weapon(weapon), name(name)
 {
 }
 

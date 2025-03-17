@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/14 17:16:03 by jetan             #+#    #+#             */
-/*   Updated: 2025/03/17 14:00:30 by jetan            ###   ########.fr       */
+/*   Updated: 2025/03/17 14:10:19 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class HumanB
 		HumanB(std::string name);
 		~HumanB();
 		void attack();
-		void setWeapon(Weapon& _Weapon);
+		void setWeapon(Weapon& weapon);
 };
 
 #endif

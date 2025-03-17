@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/14 14:20:36 by jetan             #+#    #+#             */
-/*   Updated: 2025/03/14 15:17:41 by jetan            ###   ########.fr       */
+/*   Updated: 2025/03/14 16:43:43 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Weapon
 		//setter function
 		void setType(std::string type);
 		//getter function
-		std::string getType() const;
+		std::string getType();
 };
 
 #endif
